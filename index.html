@@ -11,10 +11,39 @@
     <!-- Criar o formulário -->
      <!-- action => é para onde os dados vão -->
      <!-- method => como o form vai ser enviado -->
-     <form action="/cadastro>" method="post">
+    <form action="/cadastro>" method="post">
 
-         
+         <!-- Label => entiqueta do input, e o atributo for é para referenciar
+           a qual input este label pertence, então o for será sempre o atributo name do input
+        -->
+        <label for="nome">Nome:</label>
 
-     </form>
+        <!-- inputs = entradas / name = é usado para referenciar cada input e poder acessalo/manipulalo-->
+        <input 
+           type="text" 
+           name="nome" 
+           required 
+           placeholder="Digite o seu primeiro nome"
+       >
+
+        <label for="email">E-mail</label>
+        <input 
+           type="email" 
+           name="email" 
+           required 
+           placeholder="Digite o seu E-mail"
+        >
+
+        <label for="senha">Senha</label>
+        <input 
+           type="password" 
+           name="senha" 
+           required 
+           placeholder="Digite a sua senha"
+        >
+       
+        
+          
+    </form>
     
 </html>

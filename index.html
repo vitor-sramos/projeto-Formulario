@@ -93,7 +93,16 @@
             <label for="cor">Selecione a cor</label>
             <input type="color" name="cor">
 
-            
+            <!-- Envio de arquivos -->
+             <div>
+               <input type="file" name="arquivo"> 
+               <!-- accept eu delimito os tipos de    arquivo que vou aceitar -->
+             </div>
+             <div>
+               <input type="file" name="arquivo" accept=".pdf, .txt" multiple> 
+               <!-- accept eu delimito os tipos de arquivo que vou aceitar -->
+               <!-- o atributo multiple significa que vou poder enviar mais de um arquivo por vez -->
+             </div>
 
          <!-- Botão de ação = submit -->
           <!-- Neste caso posso usar um input do tipo submit que será um botão, e no value, 

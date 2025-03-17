@@ -16,41 +16,59 @@
          <!-- Label => entiqueta do input, e o atributo for é para referenciar
            a qual input este label pertence, então o for será sempre o atributo name do input
         -->
-        <label for="nome">Nome:</label>
+         <label for="nome">Nome:</label>
 
-        <!-- inputs = entradas / name = é usado para referenciar cada input e poder acessalo/manipulalo-->
-        <input 
-           type="text" 
-           name="nome" 
-           required 
-           placeholder="Digite o seu primeiro nome"
-       >
-
-        <label for="email">E-mail</label>
-        <input 
-           type="email" 
-           name="email" 
-           required 
-           placeholder="Digite o seu E-mail"
+         <!-- inputs = entradas / name = é usado para referenciar cada input e poder acessalo/manipulalo-->
+         <input 
+            type="text" 
+            name="nome" 
+            required 
+            placeholder="Digite o seu primeiro nome"
         >
 
-        <label for="senha">Senha</label>
-        <input 
-           type="password" 
-           name="senha" 
-           required 
-           placeholder="Digite a sua senha"
-        >
-       
-        <label for="menssagem">Menssagem</label>
-        <!-- Texto mais longo = textarea-->
-        <textarea 
-           name="menssagem" 
-           placeholder="Digite o que você achou do sistema">
-       </textarea>
+         <label for="email">E-mail</label>
+         <input 
+            type="email" 
+            name="email" 
+            required 
+            placeholder="Digite o seu E-mail"
+         >
 
-       
+         <label for="senha">Senha</label>
+         <input 
+            type="password" 
+            name="senha" 
+            required 
+            placeholder="Digite a sua senha"
+         >
+        
+         <label for="menssagem">Menssagem</label>
+         <!-- Texto mais longo = textarea-->
+         <textarea 
+            name="menssagem" 
+            placeholder="Digite o que você achou do sistema">
+        </textarea>
+
+        <!-- Formas de seleção -->
+         <!-- Selecionar algo, quero exibir todas as opções, mas só posso selecionar 1 -->
+          <h2>Preferências</h2>
+          <p>Gênero</p>
+          <!-- Neste caso como eu quero uma opção apenas eu vou referenciar cada label não com o name mas com o value de cada opção assim faz com que eu pegue o valor do campo selecionado, e possa selecionar apenas um
+           -->
+          <input type="radio" name="genero" value="masculino">
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" name="genero" value="feminino">
+          <label for="feminino">Feminino</label>
+
+          <input type="radio" name="genero" value="outro">
+          <label for="outro">Outro</label>
           
+
+
+         
+
+           
     </form>
     
 </html>
